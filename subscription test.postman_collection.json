@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "83137770-1c65-406a-8250-29bf1ccde461",
+		"name": "subscription test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5184549"
+	},
+	"item": [
+		{
+			"name": "Subscribe a user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODhkYTkzMi04MmI5LTRmMTQtOGJlZC0zMGU3N2UxNmE1YTQiLCJqdGkiOiIyMjRmNTA2NDU3OTc3MTc1NjdmNjM3ZGRmYWEyNDMxZDU1Yjg4YTRkZWIwMjIyOTUzM2YzNDZmZjk1MDlkNzE5MzZmM2VlYzE3OWFmM2M5YSIsImlhdCI6MTY3ODUyMTYzOS44NDIzOTUsIm5iZiI6MTY3ODUyMTYzOS44NDIzOTgsImV4cCI6MTcxMDE0NDAzOS42MzA3NzksInN1YiI6ImY5ZDFhZWY2LWE0MjMtNGM3Ny1hMDJlLTIzMzFjMjM4MmRjNyIsInNjb3BlcyI6W119.AO8Kr7azGafHF2Yh-1ey_Q4wkGWy0WWVEeM4TE4KDYSmAz3rxxbGjv2_NL_h0dtP8_-ql0UfkVaKOtz2nrZmraQzBlYLZH746tarlI3Bt9tomeF57YBjTRk4LGf34p3VdVD21KnmC5ncqmzGR10AE4sh4103o7XCLXgqz0yc6sQMFBtvu4hNl6pkWLm51rv6Jw-4J_BViIp1ufcBNcAY2ntPyFY0WxGYXtdJ0dMhSwpnb1wLg787ILcutgbkOQw6uvWMIIc7OBAdUQicz1QR1jd2g3pSB41SjMjuicvfMITCa2U61Z8U0R4Z9eo8rwuXlh5Em0cXiwLkKJr_AtL84kkxXfZdA5WuPcmp70bF3TLcC17VSYCNTSRzpmBuE1iRcTGeMDf6E7urmSPP40fRzUHc0isr0OAg1ObgduMMMAzy65SJTLDjYndT-F8CKOCcT17ja6twaj9iZB0PCTBS_gZ8XSD_rUM-nTzhMlwHVQMxD2paVkrH4ua0l0Q6uEmo0WU2F5CNH0Jrf27Sy5lPz4gLVZZdTzr6NTwqNMptoJjkBAbB_TwyUCNP19AuOMKH-UG8z0-Qr7NFyUyA483o99l147WFMdTmXoAqU850mOvuqbq0rDru5g5S4XANj4bHF8gkUSwCmb0l6TuWkO7e2PfsGte-jhZEhE5VoKOEnpI",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "joannie06@example.org",
+							"type": "text"
+						},
+						{
+							"key": "site",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/1/subscribes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"1",
+						"subscribes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "I am a test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "I am a description",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Post with vynch",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/1/posts/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"1",
+						"posts",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
